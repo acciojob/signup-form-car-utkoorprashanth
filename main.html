@@ -9,20 +9,22 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<form method="post">
-		<label for="">Name</label>
-			<input type="text" id="name" placeholder="Name"required="Yes">
+		<label for="name">Name</label>
+		<input type="text" id="name" placeholder="Name" required="Yes">
 		
 		<label for="email">Email</label>
-		<input type="text" id="email" placeholder="Email"required="Yes">
-	
-			
-		<label for="Male">Male</label>
-			<input type="radio" id="gender_m" required="Yes">
+		<input type="email" id="email" placeholder="Email" required="Yes">
+
+		<label>Gender</label>
+    <input type="radio" id="gender_m" name="gender" value="male" required>
+    <label for="gender_m">Male</label>
+    <input type="radio" id="gender_f" name="gender" value="female" required>
+    <label for="gender_f">Female</label>
+
+
 		
-		<label for="female">Female</label>
-			<input type="radio" id="gender_f" required="Yes">
 		
-		<label for="car">Select a car</label>
+		<label for="car">Car brands</label>
 		<select placeholder="--Please choose an option--" id="cars">
 			<option>skoda</option>
 			<option>audi</option>
@@ -34,12 +36,12 @@
 		</label>
 		<input type="date" id="dob">
 		<label for="tel">Phone Number</label>
-		<input type="Tel" placeholder="xxx-xxx-xxxx" id="tel">
+		<input type="tel"el" placeholder="xxx-xxx-xxxx" id="tel">
 		<label for="password">Password</label>
 		<input type="password" id="password" placeholder="Password">
 		<label for="tos">I agree to the TOS</label>
 		<input type="checkbox" id="tos">
-		<button type="submit">
+		<button type="submit">Submit</button>
 			
 		
 	</form>
